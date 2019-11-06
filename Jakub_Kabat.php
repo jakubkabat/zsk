@@ -41,7 +41,7 @@
         } while ($num <= $size);
         echo "</tr>";
         do { 
-            echo "<th>",$i,"</th>";
+            echo "<th>", $i, "</th>";
             do {
                 if ($i === $j) {
                     echo "<td class='red'>",$i * $j;
@@ -52,7 +52,9 @@
                     $sum2 += $i * $j;
                     echo "</td>";
                 } else {
-                    echo "<td>", $i * $j, "</td>";
+                    echo "<td>"; 
+                    echo $i * $j;
+                    echo "</td>";
                 }
                 $j++;
             } while ($j <= $size);
